@@ -77,39 +77,7 @@ public class CommunicationThread extends Thread {
 
                 // Extrage subșirul dintre al doilea '[' și primul ']'
                 result = pageSourceCode.substring(secondBracketIndex + 1, closingBracketIndex);
-
-//                JSONObject content = new JSONObject(pageSourceCode);
-//
-//                JSONArray weatherArray = content.getJSONArray(Constants.WEATHER);
-//                JSONObject weather;
-//                StringBuilder condition = new StringBuilder();
-//                for (int i = 0; i < weatherArray.length(); i++) {
-//                    weather = weatherArray.getJSONObject(i);
-//                    condition.append(weather.getString(Constants.MAIN)).append(" : ").append(weather.getString(Constants.DESCRIPTION));
-//
-//                    if (i < weatherArray.length() - 1) {
-//                        condition.append(";");
-//                    }
-//                }
-//
-//                JSONObject main = content.getJSONObject(Constants.MAIN);
-//                String temperature = main.getString(Constants.TEMP);
-//                String pressure = main.getString(Constants.PRESSURE);
-//                String humidity = main.getString(Constants.HUMIDITY);
-//
-//                JSONObject wind = content.getJSONObject(Constants.WIND);
-//                String windSpeed = wind.getString(Constants.SPEED);
-//
-//                weatherForecastInformation = new WeatherForecastInformation(
-//                        temperature, windSpeed, condition.toString(), pressure, humidity
-//                );
-//                serverThread.setData(city, weatherForecastInformation);
             }
-//            if (weatherForecastInformation == null) {
-//                Log.e(Constants.TAG, "[COMMUNICATION THREAD] Weather Forecast Information is null!");
-//                return;
-//            }
-//            String result;
 
             printWriter.println(result);
             printWriter.flush();
