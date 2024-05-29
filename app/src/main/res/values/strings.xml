@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PracticalTest02v1</string>
+    <string name="server">server</string>
+    <string name="server_port">port</string>
+    <string name="connect">connect</string>
+    <string name="client">client</string>
+    <string name="client_address">address</string>
+    <string name="client_port">port</string>
+    <string name="search">search_text</string>
+    <string name="get_search_result">get_search_result</string>
+</resources>
